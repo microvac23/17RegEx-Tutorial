@@ -1,10 +1,19 @@
-# Regex Tutorial
+# How to Validate a Password With Regex
 
-Introductory paragraph (replace this with your text)
+In this blog we will be discussing how a password is validated with regex. 
+<br>Specifically a password with...
+* A character length of at least 8
+* One uppercase letter
+* One lowercase letter
+* and One number
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Here is the code snippet for a regex expression that satisfies the above criteria...
+
+``` 
+^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$ 
+```
 
 ## Table of Contents
 
@@ -23,6 +32,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+``` 
+^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$ 
+```
+
+**^ and $** are the opening and closing tags for a regex expression, respectively.
+
 
 ### Quantifiers
 
